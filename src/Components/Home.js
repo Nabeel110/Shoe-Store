@@ -34,10 +34,10 @@ const Home = () => {
     return (
         <div style ={bgStyle}>
         <Navbar />
-            <div  className ="text-center" style = {{marginTop: '30%'}}>
+            <div  className ="text-center" >
 
             <Link to="/products">
-            <Button style ={{margin: " 1.75% 35%"}}
+            <Button style ={{marginTop: "150px", marginLeft:"50px", marginRight:"50px"}}
             className ={classes.button}
             variant="contained" 
             color ="secondary"

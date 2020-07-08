@@ -10,7 +10,8 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-
+    // display:'flex',
+    // flexWrap:'wrap',
     flexGrow: 1,
     margin: "100px"
   },
@@ -37,33 +38,36 @@ const About = () => {
     <div >
       <Navbar />
       <div className={classes.root} style={{ textAlign: "center" }}>
-        <h1 style={{ textAlign: "center", paddingLeft: "12px" }}>ABOUT ME</h1>
+        
 
         <Grid container
           spacing={3}
-          direction="row"
-          alignItems="center"
-          justify="center" zeroMinWidth
+          direction="column"
+          alignItems ="center"
+          justify= "center" zeroMinWidth
           alignContent="center"
           wrap="wrap"
         >
+        
           <Grid item xs={12} sm={12} md={12} xs-center justify-xs-center>
-
-            <Paper style={{ backgroundColor: "#c7c5f5", height: "390px", paddingTop: "3px", paddingBottom: "20px" }} className={classes.paper} elevation={3}>
+          <h1 style={{ textAlign: "center" }}>ABOUT ME</h1>
+            <Paper style={{width :"100%", backgroundColor: "#c7c5f5",paddingRight:"14px",paddingLeft:"14px", paddingTop: "3px", paddingBottom: "20px" }} className={classes.paper} elevation={3}>
               <h2>Nabeel Ahmed</h2>
               <Grid container
                 spacing={3}
-                direction="row"
-                alignItems="center"
-                justify="center" zeroMinWidth
+                direction="column"
+                alignItems ="center"
+                justify= "center" zeroMinWidth
                 alignContent="center"
-                wrap="wrap"
+                 wrap="wrap"
               >
                 <Grid item xs={12} sm={12} md={12} xs-center justify-xs-center></Grid>
                 <Avatar srcSet zeroMinWidth alt="Remy Sharp" src={ProfilePic} className={classes.large} />
                 <Grid />
               </Grid>
-              <Typography style={{ fontWeight: "bold", fontSize: "30px", padding: "3%" }}><span>"If you liked my project,don't forget to leave a <span role="img" aria-label="Emoji">⭐</span>on my repository."</span> </Typography>
+              <div style ={{wrap: "wrap", paddingRight: "5px"}}>
+              <Typography alignJustify style={{ fontWeight: "bold", fontSize: "30px", padding: "4%" }}><span>"If you liked my project,don't forget to leave a <span role="img" aria-label="Emoji">⭐</span>on my repository."</span> </Typography>
+              </div>
               <a style={{ listStyle: "none" }} href="https://github.com/Nabeel110/Shoe-Store"><GitHub style={{ color: "#BA1D1D" }} fontSize="large" /><bold>Github</bold></a>
 
             </Paper>
