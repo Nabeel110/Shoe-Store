@@ -64,7 +64,7 @@ const About = () => {
                 <Grid />
               </Grid>
               <Typography style={{ fontWeight: "bold", fontSize: "30px", padding: "3%" }}><span>"If you liked my project,don't forget to leave a <span role="img" aria-label="Emoji">⭐</span>on my repository."</span> </Typography>
-              <a style={{ listStyle: "none" }} href="https://github.com/Nabeel110"><GitHub style={{ color: "#BA1D1D" }} fontSize="large" /><bold>Github</bold></a>
+              <a style={{ listStyle: "none" }} href="https://github.com/Nabeel110/Shoe-Store"><GitHub style={{ color: "#BA1D1D" }} fontSize="large" /><bold>Github</bold></a>
 
             </Paper>
           </Grid>
