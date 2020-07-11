@@ -36,7 +36,7 @@ const Home = () => {
         <Navbar />
             <div  className ="text-center" >
 
-            <Link to="/products">
+            <Link to="/products" style={{ textDecoration: 'none' }}>
             <Button style ={{marginTop: "150px", marginLeft:"50px", marginRight:"50px"}}
             className ={classes.button}
             variant="contained" 

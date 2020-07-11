@@ -78,7 +78,7 @@ const ProducIndex = () => {
                                         <Button onClick={handleClick} size="small" variant="outlined" color="secondary">
                                             <ShoppingBasketIcon /> &nbsp; Add to Basket
         </Button>
-                                        <Link to={productID}>
+                                        <Link to={productID} style={{ textDecoration: 'none' }}>
                                             <Button size="small" variant="outlined" className= {classes.btn}>
                                                 <Details /> &nbsp; Details
         </Button>
