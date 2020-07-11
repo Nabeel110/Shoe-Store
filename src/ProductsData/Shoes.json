@@ -1,6 +1,6 @@
 {
-    "products": [
-      {
+    
+      "StylishPartyShoes": {
         "_id": "1",
         "image": "/images/shoe1.jpg",
         "title": "Stylish Party Shoes",
@@ -8,7 +8,7 @@
         "availableSizes": ["XS", "S", "M", "L"],
         "price": 29.9
       },
-      {
+      "Sports_Wear":{
         "_id": "2",
         "image": "/images/shoe2.jpg",
         "title": "Sports Wear",
@@ -16,7 +16,7 @@
         "availableSizes": ["S", "M", "L"],
         "price": 18.9
       },
-      {
+      "Classical_Wear":{
         "_id": "3",
         "image": "/images/shoe3.jpg",
         "title": "Classical Wear",
@@ -24,7 +24,7 @@
         "availableSizes": ["S", "M", "L"],
         "price": 14.9
       },
-      {
+      "Red_NIKE":{
         "_id": "4",
         "image": "/images/shoe4.jpg",
         "title": "Red NIKE",
@@ -32,7 +32,7 @@
         "availableSizes": ["L"],
         "price": 25.9
       },
-      {
+      "Rain_Shoes":{
         "_id": "5",
         "image": "/images/shoe5.jpg",
         "title": "Rain Shoes",
@@ -40,7 +40,7 @@
         "availableSizes": ["X", "L", "XL"],
         "price": 10.9
       },
-      {
+      "Soft_FootWear":{
         "_id": "6",
         "image": "/images/shoe6.jpg",
         "title": "Soft FootWear",
@@ -48,7 +48,7 @@
         "availableSizes": ["XL", "XXL"],
         "price": 49.9
       },
-      {
+      "Baby_Pink_Shoes":{
         "_id": "7",
         "image": "/images/shoe7.jpg",
         "title": "Baby Pink Shoes",
@@ -56,7 +56,7 @@
         "availableSizes": ["X", "L", "XL", "XXL"],
         "price": 29.9
       },
-      {
+      "Party_Wear":{
         "_id": "8",
         "image": "/images/shoe8.jpg",
         "title": "Party Wear",
@@ -64,7 +64,7 @@
         "availableSizes": ["X", "M", "L"],
         "price": 18.9
       },
-      {
+      "Soft_Wear":{
         "_id": "9",
         "image": "/images/shoe9.jpg",
         "title": "Soft Wear",
@@ -72,7 +72,7 @@
         "availableSizes": ["X", "M", "L"],
         "price": 14.9
       },
-      {
+      "NIKE_Red_Shoes":{
         "_id": "10",
         "image": "/images/shoe10.jpg",
         "title": "NIKE Red Shoes",
@@ -80,7 +80,7 @@
         "availableSizes": ["XL"],
         "price": 25.9
       },
-      {
+      "Winter_Shoes":{
         "_id": "11",
         "image": "/images/shoe11.jpg",
         "title": "Wiinter Shoes",
@@ -88,7 +88,7 @@
         "availableSizes": ["X", "L", "XL"],
         "price": 10.9
       },
-      {
+      "Casual_Wear":{
         "_id": "12",
         "image": "/images/shoe12.jpg",
         "title": "Casual Wear",
@@ -96,5 +96,5 @@
         "availableSizes": ["XL", "XXL"],
         "price": 49.9
       }
-    ]
+    
 }

@@ -31,7 +31,8 @@ const ProductDetails = () => {
 
     const {productID} = useParams();
 
-    const product = ShoesData.products[productID];
+    const product = ShoesData[productID];
+    console.log(product);
 
     const {title, image, description, availableSizes, price } = product
 
@@ -48,8 +49,8 @@ const ProductDetails = () => {
           spacing={3}
           direction ="column"
           alignItems ="center"
-          justify= "center" zeroMinWidth >
-           <Grid item xs={12} sm ={6} xs-center>
+          justify= "center"  >
+           <Grid item xs={12} sm ={6} xs-center = "true">
             <Paper style = {{backgroundColor: "#be1d1d", color:"white"}} className= {classes.paper} elevation={3}>
             <br/>
             <h1 style ={{fontSize: "3rem"}}>{title}</h1>

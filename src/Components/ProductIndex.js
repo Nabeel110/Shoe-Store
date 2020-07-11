@@ -39,7 +39,8 @@ const handleClick = (product) => {
 
 const ProducIndex = () => {
 
-    const { products } = ShoesData;
+    const  products  = ShoesData;
+    console.log(products);
     const classes = useStyles();
 
 
@@ -47,9 +48,9 @@ const ProducIndex = () => {
         <>
             <h1 style={{ textAlign: 'center' }}>Welcome to Products Page</h1>
             <Grid container align="center" spacing={1}>
-                {products.map(product => {
-                    return (
-                        <Grid item xs={12} sm={6} md={3} key={product._id}>
+                {Object.entries(products).map(([productID, {image,title, _id}]) => 
+                     (
+                        <Grid item xs={12} sm={6} md={3} key={_id}>
 
                             <Box boxShadow={3}>
                                 {/* <Link to ="/"> */}
@@ -57,13 +58,14 @@ const ProducIndex = () => {
                                     <CardActionArea>
 
                                         <CardMedia
+                                            component="img"
                                             className={classes.media}
-                                            image={product.image}
-                                            title={product.title}
+                                            image={image}
+                                            title={title}
                                         />
                                         <CardContent>
                                             <Typography gutterBottom variant="h5" component="h2">
-                                                {product.title}
+                                                {title}
                                             </Typography>
                                             <Typography variant="body2" color="textSecondary" component="p">
                                                 Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -76,7 +78,7 @@ const ProducIndex = () => {
                                         <Button onClick={handleClick} size="small" variant="outlined" color="secondary">
                                             <ShoppingBasketIcon /> &nbsp; Add to Basket
         </Button>
-                                        <Link to={product._id}>
+                                        <Link to={productID}>
                                             <Button size="small" variant="outlined" className= {classes.btn}>
                                                 <Details /> &nbsp; Details
         </Button>
@@ -89,7 +91,7 @@ const ProducIndex = () => {
                         </Grid>
                     )
 
-                })}
+                )}
             </Grid>
         </>
 

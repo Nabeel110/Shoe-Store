@@ -41,7 +41,7 @@ const Home = () => {
             className ={classes.button}
             variant="contained" 
             color ="secondary"
-            size="lg"
+            size="large"
             endIcon={<ShoppingCart fontSize = 'large'  />}
             >Lets Go Shopping!</Button>
             </Link>

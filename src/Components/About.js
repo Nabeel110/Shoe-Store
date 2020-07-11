@@ -44,12 +44,12 @@ const About = () => {
           spacing={3}
           direction="column"
           alignItems ="center"
-          justify= "center" zeroMinWidth
+          justify= "center" 
           alignContent="center"
           wrap="wrap"
         >
         
-          <Grid item xs={12} sm={12} md={12} xs-center justify-xs-center>
+          <Grid item xs={12} sm={12} md={12} xs-center = "true" justify-xs-center ="true">
           <h1 style={{ textAlign: "center" }}>ABOUT ME</h1>
             <Paper style={{width :"100%", backgroundColor: "#c7c5f5",paddingRight:"14px",paddingLeft:"14px", paddingTop: "3px", paddingBottom: "20px" }} className={classes.paper} elevation={3}>
               <h2>Nabeel Ahmed</h2>
@@ -57,18 +57,18 @@ const About = () => {
                 spacing={3}
                 direction="column"
                 alignItems ="center"
-                justify= "center" zeroMinWidth
+                justify= "center" 
                 alignContent="center"
                  wrap="wrap"
               >
-                <Grid item xs={12} sm={12} md={12} xs-center justify-xs-center></Grid>
-                <Avatar srcSet zeroMinWidth alt="Remy Sharp" src={ProfilePic} className={classes.large} />
+                <Grid item xs={12} sm={12} md={12} xs-center = "true" justify-xs-center ="true"></Grid>
+                <Avatar alt="Remy Sharp" src={ProfilePic} className={classes.large} />
                 <Grid />
               </Grid>
               <div style ={{wrap: "wrap", paddingRight: "5px"}}>
-              <Typography alignJustify style={{ fontWeight: "bold", fontSize: "30px", padding: "4%" }}><span>"If you liked my project,don't forget to leave a <span role="img" aria-label="Emoji">⭐</span>on my repository."</span> </Typography>
+              <Typography style={{ fontWeight: "bold", fontSize: "30px", padding: "4%" }}><span>"If you liked my project,don't forget to leave a <span role="img" aria-label="Emoji">⭐</span>on my repository."</span> </Typography>
               </div>
-              <a style={{ listStyle: "none" }} href="https://github.com/Nabeel110/Shoe-Store"><GitHub style={{ color: "#BA1D1D" }} fontSize="large" /><bold>Github</bold></a>
+              <a style={{ listStyle: "none",textDecoration: "none" }} href="https://github.com/Nabeel110/Shoe-Store"><GitHub style={{ color: "black" }} fontSize="large" /><b>Github</b></a>
 
             </Paper>
           </Grid>
